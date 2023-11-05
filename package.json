@@ -1,5 +1,8 @@
 {
+  "private": true,
+  "type": "module",
   "devDependencies": {
+    "pob-dependencies": "8.7.1",
     "prettier": "3.0.3"
   },
   "packageManager": "yarn@4.0.1",
