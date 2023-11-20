@@ -59,7 +59,6 @@
         "prettier",
         "rollup",
         "semver",
-        "typescript",
         "typedoc",
         "repository-check-dirty",
         "standard-version",
@@ -67,6 +66,20 @@
         "jest-junit-reporter"
       ],
       "updateTypes": ["patch", "minor"],
+      "addLabels": [":ok_hand: code/approved"],
+      "schedule": ["at any time"]
+    },
+    {
+      "stabilityDays": 0,
+      "packageNames": ["typescript"],
+      "updateTypes": ["patch"],
+      "addLabels": [":ok_hand: code/approved"],
+      "schedule": ["at any time"]
+    },
+    {
+      "stabilityDays": 7,
+      "packageNames": ["typescript"],
+      "updateTypes": ["minor"],
       "addLabels": [":ok_hand: code/approved"],
       "schedule": ["at any time"]
     },
