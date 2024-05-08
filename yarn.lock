@@ -8,7 +8,7 @@ __metadata:
 "pob-dependencies@npm:11.0.0":
   version: 11.0.0
   resolution: "pob-dependencies@npm:11.0.0"
-  checksum: 9e96bf8a158c0f4dfc1d7a27568b3e88985b840275839404d8e2bd04dc127fced71d166e987f6a31b7bf8a961a5e8c883731f25aabd42f2ea04d1ff1c63680b5
+  checksum: 10/9e96bf8a158c0f4dfc1d7a27568b3e88985b840275839404d8e2bd04dc127fced71d166e987f6a31b7bf8a961a5e8c883731f25aabd42f2ea04d1ff1c63680b5
   languageName: node
   linkType: hard
 
@@ -17,7 +17,7 @@ __metadata:
   resolution: "prettier@npm:2.8.8"
   bin:
     prettier: bin-prettier.js
-  checksum: 00cdb6ab0281f98306cd1847425c24cbaaa48a5ff03633945ab4c701901b8e96ad558eb0777364ffc312f437af9b5a07d0f45346266e8245beaf6247b9c62b24
+  checksum: 10/00cdb6ab0281f98306cd1847425c24cbaaa48a5ff03633945ab4c701901b8e96ad558eb0777364ffc312f437af9b5a07d0f45346266e8245beaf6247b9c62b24
   languageName: node
   linkType: hard
 
