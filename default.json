@@ -23,10 +23,21 @@
       "matchUpdateTypes": ["patch"],
       "semanticCommitType": "fix",
       "packageNames": [
+        "@playwright/test",
+        "@pob/esbuild",
+        "@pob/rollup-esbuild",
+        "@pob/rollup-typescript",
+        "@swc-node/register",
+        "@swc/core",
+        "@swc/jest",
+        "@vitest/coverage-v8",
         "alp-rollup-plugin-config",
         "check-package-dependencies",
         "pob-babel",
-        "rollup"
+        "rollup",
+        "ts-node",
+        "tslib",
+        "vitest"
       ]
     },
     {

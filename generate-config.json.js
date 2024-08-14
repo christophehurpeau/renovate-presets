@@ -38,7 +38,7 @@ config.packageRules[1].packageNames = Object.keys(
     !isEslintDep(pkgName)
 );
 
-const formattedConfig = prettier.format(JSON.stringify(config, null, 2), {
+const formattedConfig = await prettier.format(JSON.stringify(config, null, 2), {
   filepath: "default.json",
   printWidth: 80,
 });
