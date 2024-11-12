@@ -77,21 +77,21 @@
         "jest-junit-reporter"
       ],
       "updateTypes": ["patch", "minor"],
-      "addLabels": [":ok_hand: code/approved"],
+      "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     },
     {
       "stabilityDays": 0,
       "packageNames": ["typescript"],
       "updateTypes": ["patch"],
-      "addLabels": [":ok_hand: code/approved"],
+      "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     },
     {
       "stabilityDays": 7,
       "packageNames": ["typescript"],
       "updateTypes": ["minor"],
-      "addLabels": [":ok_hand: code/approved"],
+      "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     },
     {
@@ -140,11 +140,11 @@
       "packageNames": ["@pob/root", "@pob/lerna-light", "yarn"],
       "updateTypes": ["patch", "minor"],
       "stabilityDays": 0,
-      "addLabels": [":ok_hand: code/approved"]
+      "addLabels": [":white_check_mark: bot approval"]
     },
     {
       "updateTypes": ["pin"],
-      "addLabels": [":ok_hand: code/approved"],
+      "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     }
   ]
