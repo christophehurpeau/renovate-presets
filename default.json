@@ -33,6 +33,7 @@
         "@vitest/coverage-v8",
         "alp-rollup-plugin-config",
         "check-package-dependencies",
+        "pinst",
         "pob-babel",
         "rollup",
         "ts-node",
