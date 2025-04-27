@@ -43,6 +43,7 @@
     {
       "groupName": "Pob Dependencies",
       "packageNames": ["alp-rollup-plugin-config", "pob-babel"],
+      "packagePatterns": ["^@pob/rollup-"],
       "schedule": ["before 3am on Friday"]
     },
     {
