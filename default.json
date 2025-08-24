@@ -36,7 +36,6 @@
         "pinst",
         "pob-babel",
         "rollup",
-        "ts-node",
         "tslib",
         "vitest"
       ]
