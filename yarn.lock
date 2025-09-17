@@ -5,19 +5,19 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"pob-dependencies@npm:19.1.0":
-  version: 19.1.0
-  resolution: "pob-dependencies@npm:19.1.0"
-  checksum: 10/5f6ff89b250c19442fc052e50f07f5ac3dd5680c7a55a8c21c64acc1e8a89ad1cdc99c6fcba02585b9d6bd95c3d77debfbd30da9af7cfadbfbcb04ad97633b0d
+"pob-dependencies@npm:20.2.0":
+  version: 20.2.0
+  resolution: "pob-dependencies@npm:20.2.0"
+  checksum: 10/6b22067afebede538986d85a06f2f0a002f0d0d1b83301a4052a90b3717792bf65d973b0f57eae95452d16748087eb73195a2c9f16d81523c1542e54f8552dfe
   languageName: node
   linkType: hard
 
-"prettier@npm:3.5.3":
-  version: 3.5.3
-  resolution: "prettier@npm:3.5.3"
+"prettier@npm:3.6.2":
+  version: 3.6.2
+  resolution: "prettier@npm:3.6.2"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10/7050c08f674d9e49fbd9a4c008291d0715471f64e94cc5e4b01729affce221dfc6875c8de7e66b728c64abc9352eefb7eaae071b5f79d30081be207b53774b78
+  checksum: 10/1213691706bcef1371d16ef72773c8111106c3533b660b1cc8ec158bd109cdf1462804125f87f981f23c4a3dba053b6efafda30ab0114cc5b4a725606bb9ff26
   languageName: node
   linkType: hard
 
@@ -25,7 +25,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    pob-dependencies: "npm:19.1.0"
-    prettier: "npm:3.5.3"
+    pob-dependencies: "npm:20.2.0"
+    prettier: "npm:3.6.2"
   languageName: unknown
   linkType: soft

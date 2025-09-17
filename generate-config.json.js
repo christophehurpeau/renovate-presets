@@ -2,7 +2,7 @@ import fs from "node:fs";
 import prettier from "prettier";
 
 const pobDependencies = JSON.parse(
-  fs.readFileSync("node_modules/pob-dependencies/package.json")
+  fs.readFileSync("node_modules/pob-dependencies/package.json"),
 );
 
 const path = "./default.json";
@@ -27,15 +27,15 @@ const isEslintDep = (dep) =>
   dep.startsWith("@pob/eslint") ||
   dep.startsWith("@typescript-eslint/");
 
-config.packageRules[1].packageNames = Object.keys(
-  pobDependencies.devDependencies
+config.packageRules[1].matchPackageNames = Object.keys(
+  pobDependencies.devDependencies,
 ).filter(
   (pkgName) =>
     !pkgName.startsWith("@babel") &&
     !pkgName.startsWith("babel-") &&
     !pkgName.startsWith("@types") &&
     !excludePkgNames.includes(pkgName) &&
-    !isEslintDep(pkgName)
+    !isEslintDep(pkgName),
 );
 
 const formattedConfig = await prettier.format(JSON.stringify(config, null, 2), {

@@ -1,7 +1,7 @@
 {
   "prConcurrentLimit": 10,
-  "masterIssue": true,
-  "masterIssueApproval": false,
+  "dependencyDashboard": true,
+  "dependencyDashboardApproval": false,
   "recreateClosed": true,
   "postUpdateOptions": ["yarnDedupeFewer", "yarnDedupeHighest"],
   "labels": [":vertical_traffic_light: automerge"],
@@ -15,14 +15,14 @@
   "packageRules": [
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
-      "matchUpdateTypes": ["major", "minor"],
+      "matchmatchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
     },
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
-      "matchUpdateTypes": ["patch"],
+      "matchmatchUpdateTypes": ["patch"],
       "semanticCommitType": "fix",
-      "packageNames": [
+      "matchPackageNames": [
         "@playwright/test",
         "@pob/esbuild",
         "@pob/rollup-esbuild",
@@ -36,26 +36,25 @@
         "pinst",
         "pob-babel",
         "rollup",
-        "ts-node",
         "tslib",
         "vitest"
       ]
     },
     {
       "groupName": "Pob Dependencies",
-      "packageNames": ["alp-rollup-plugin-config", "pob-babel"],
-      "packagePatterns": ["^@pob/rollup-"],
+      "matchPackageNames": ["alp-rollup-plugin-config", "pob-babel"],
+      "matchPackagePatterns": ["^@pob/rollup-"],
       "schedule": ["before 3am on Friday"]
     },
     {
-      "packagePatterns": ["^@typescript-eslint/", "^eslint-"],
-      "updateTypes": ["major"],
+      "matchPackagePatterns": ["^@typescript-eslint/", "^eslint-"],
+      "matchUpdateTypes": ["major"],
       "schedule": ["before 3am on Friday"],
-      "packageNames": ["eslint"]
+      "matchPackageNames": ["eslint"]
     },
     {
       "stabilityDays": 0,
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^@pob/eslint-config",
         "^@typescript-eslint/",
         "^eslint-",
@@ -66,7 +65,7 @@
         "^@types/",
         "^@rollup/"
       ],
-      "packageNames": [
+      "matchPackageNames": [
         "check-package-dependencies",
         "eslint",
         "prettier",
@@ -78,74 +77,76 @@
         "jest",
         "jest-junit-reporter"
       ],
-      "updateTypes": ["patch", "minor"],
+      "matchUpdateTypes": ["patch", "minor"],
       "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     },
     {
       "stabilityDays": 0,
-      "packageNames": ["typescript"],
-      "updateTypes": ["patch"],
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["patch"],
       "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     },
     {
       "stabilityDays": 7,
-      "packageNames": ["typescript"],
-      "updateTypes": ["minor"],
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["minor"],
       "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     },
     {
       "groupName": "@pob eslint configs",
       "stabilityDays": 0,
-      "packagePatterns": ["^@pob/eslint-config"]
+      "matchPackagePatterns": ["^@pob/eslint-config"]
     },
     {
       "groupName": "nightingale",
       "description": "nightingale monorepo",
       "stabilityDays": 0,
-      "sourceUrlPrefixes": ["https://github.com/christophehurpeau/nightingale"]
+      "matchSourceUrls": [
+        "https://github.com/christophehurpeau/nightingale{/,}**"
+      ]
     },
     {
       "groupName": "alp",
       "description": "alp monorepo",
       "stabilityDays": 0,
-      "sourceUrlPrefixes": ["https://github.com/christophehurpeau/alp"]
+      "matchSourceUrls": ["https://github.com/christophehurpeau/alp{/,}**"]
     },
     {
       "groupName": "liwi",
       "description": "liwi monorepo",
       "stabilityDays": 0,
-      "sourceUrlPrefixes": ["https://github.com/liwijs/liwi"]
+      "matchSourceUrls": ["https://github.com/liwijs/liwi{/,}**"]
     },
     {
       "groupName": "tamagui",
       "description": "tamagui monorepo",
-      "packagePatterns": ["^@tamagui/"],
-      "packageNames": ["tamagui"]
+      "matchPackagePatterns": ["^@tamagui/"],
+      "matchPackageNames": ["tamagui"]
     },
     {
       "groupName": "pob root",
       "description": "pob root",
-      "packageNames": ["@pob/root", "@pob/lerna-light"],
+      "matchPackageNames": ["@pob/root", "@pob/lerna-light"],
       "stabilityDays": 1,
       "schedule": ["at any time"]
     },
     {
-      "packageNames": ["yarn"],
+      "matchPackageNames": ["yarn"],
       "stabilityDays": 1,
-      "updateTypes": ["patch", "minor"],
+      "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["at any time"]
     },
     {
-      "packageNames": ["@pob/root", "@pob/lerna-light", "yarn"],
-      "updateTypes": ["patch", "minor"],
+      "matchPackageNames": ["@pob/root", "@pob/lerna-light", "yarn"],
+      "matchUpdateTypes": ["patch", "minor"],
       "stabilityDays": 0,
       "addLabels": [":white_check_mark: bot approval"]
     },
     {
-      "updateTypes": ["pin"],
+      "matchUpdateTypes": ["pin"],
       "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
     }
