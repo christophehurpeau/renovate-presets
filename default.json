@@ -5,7 +5,6 @@
   "recreateClosed": true,
   "postUpdateOptions": ["yarnDedupeFewer", "yarnDedupeHighest"],
   "labels": [":vertical_traffic_light: automerge"],
-  "rangeStrategy": "bump",
   "assignees": ["christophehurpeau"],
   "lockFileMaintenance": {
     "enabled": false
@@ -13,6 +12,10 @@
   "stabilityDays": 4,
   "internalChecksFilter": "strict",
   "packageRules": [
+    {
+      "matchManagers": ["npm"],
+      "rangeStrategy": "bump"
+    },
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
       "matchmatchUpdateTypes": ["major", "minor"],
