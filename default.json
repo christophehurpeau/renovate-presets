@@ -18,12 +18,12 @@
     },
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
-      "matchmatchUpdateTypes": ["major", "minor"],
+      "matchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
     },
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
-      "matchmatchUpdateTypes": ["patch"],
+      "matchUpdateTypes": ["patch"],
       "semanticCommitType": "fix",
       "matchPackageNames": [
         "@playwright/test",
