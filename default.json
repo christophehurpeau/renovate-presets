@@ -45,29 +45,20 @@
     },
     {
       "groupName": "Pob Dependencies",
-      "matchPackageNames": ["alp-rollup-plugin-config", "pob-babel"],
-      "matchPackagePatterns": ["^@pob/rollup-"],
+      "matchPackageNames": [
+        "alp-rollup-plugin-config",
+        "pob-babel",
+        "@pob/rollup-*"
+      ],
       "schedule": ["before 3am on Friday"]
     },
     {
-      "matchPackagePatterns": ["^@typescript-eslint/", "^eslint-"],
       "matchUpdateTypes": ["major"],
       "schedule": ["before 3am on Friday"],
-      "matchPackageNames": ["eslint"]
+      "matchPackageNames": ["eslint", "@typescript-eslint/*", "eslint-*"]
     },
     {
       "stabilityDays": 0,
-      "matchPackagePatterns": [
-        "^@pob/eslint-config",
-        "^@typescript-eslint/",
-        "^eslint-",
-        "^@babel/",
-        "^@pob/",
-        "^pob-",
-        "^babel-",
-        "^@types/",
-        "^@rollup/"
-      ],
       "matchPackageNames": [
         "check-package-dependencies",
         "eslint",
@@ -78,7 +69,16 @@
         "repository-check-dirty",
         "standard-version",
         "jest",
-        "jest-junit-reporter"
+        "jest-junit-reporter",
+        "@pob/eslint-config*",
+        "@typescript-eslint/*",
+        "eslint-*",
+        "@babel/*",
+        "@pob/*",
+        "pob-*",
+        "babel-*",
+        "@types/*",
+        "@rollup*/"
       ],
       "matchUpdateTypes": ["patch", "minor"],
       "addLabels": [":white_check_mark: bot approval"],
@@ -101,7 +101,7 @@
     {
       "groupName": "@pob eslint configs",
       "stabilityDays": 0,
-      "matchPackagePatterns": ["^@pob/eslint-config"]
+      "matchPackageNames": ["@pob/eslint-config*"]
     },
     {
       "groupName": "nightingale",
@@ -126,8 +126,12 @@
     {
       "groupName": "tamagui",
       "description": "tamagui monorepo",
-      "matchPackagePatterns": ["^@tamagui/"],
-      "matchPackageNames": ["tamagui"]
+      "matchPackageNames": ["tamagui", "@tamagui/*"]
+    },
+    {
+      "groupName": "alouette",
+      "description": "alouette monorepo",
+      "matchPackageNames": ["alouette", "alouette-icons"]
     },
     {
       "groupName": "pob root",
