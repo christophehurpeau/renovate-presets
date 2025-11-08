@@ -22,7 +22,8 @@
     },
     {
       "matchPackageNames": ["node"],
-      "rangeStrategy": "replace"
+      "rangeStrategy": "replace",
+      "dependencyDashboardApproval": true
     },
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
