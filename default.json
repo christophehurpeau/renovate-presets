@@ -21,6 +21,10 @@
       "enabled": false
     },
     {
+      "matchPackageNames": ["node"],
+      "rangeStrategy": "replace"
+    },
+    {
       "matchDepTypes": ["dependencies", "peerDependencies"],
       "matchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
