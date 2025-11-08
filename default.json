@@ -17,6 +17,10 @@
       "rangeStrategy": "bump"
     },
     {
+      "matchDatasources": ["node-version"],
+      "enabled": false
+    },
+    {
       "matchDepTypes": ["dependencies", "peerDependencies"],
       "matchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
