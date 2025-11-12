@@ -22,6 +22,10 @@
     },
     {
       "matchPackageNames": ["node"],
+      "enabled": false
+    },
+    {
+      "matchPackageNames": ["node"],
       "rangeStrategy": "replace",
       "dependencyDashboardApproval": true
     },
