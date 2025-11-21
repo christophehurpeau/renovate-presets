@@ -31,7 +31,24 @@
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
       "matchUpdateTypes": ["major", "minor"],
-      "semanticCommitType": "feat"
+      "semanticCommitType": "feat",
+      "matchPackageNames": [
+        "@playwright/test",
+        "@pob/esbuild",
+        "@pob/rollup-esbuild",
+        "@pob/rollup-typescript",
+        "@swc-node/register",
+        "@swc/core",
+        "@swc/jest",
+        "@vitest/coverage-v8",
+        "alp-rollup-plugin-config",
+        "check-package-dependencies",
+        "pinst",
+        "pob-babel",
+        "rollup",
+        "tslib",
+        "vitest"
+      ]
     },
     {
       "matchDepTypes": ["dependencies", "peerDependencies"],
