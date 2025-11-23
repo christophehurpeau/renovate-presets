@@ -70,47 +70,6 @@
       "matchPackageNames": ["eslint", "@typescript-eslint/*", "eslint-*"]
     },
     {
-      "stabilityDays": 0,
-      "matchPackageNames": [
-        "check-package-dependencies",
-        "eslint",
-        "prettier",
-        "rollup",
-        "semver",
-        "typedoc",
-        "repository-check-dirty",
-        "standard-version",
-        "jest",
-        "jest-junit-reporter",
-        "@pob/eslint-config*",
-        "@typescript-eslint/*",
-        "eslint-*",
-        "@babel/*",
-        "@pob/*",
-        "pob-*",
-        "babel-*",
-        "@types/*",
-        "@rollup*/"
-      ],
-      "matchUpdateTypes": ["patch", "minor"],
-      "addLabels": [":white_check_mark: bot approval"],
-      "schedule": ["at any time"]
-    },
-    {
-      "stabilityDays": 0,
-      "matchPackageNames": ["typescript"],
-      "matchUpdateTypes": ["patch"],
-      "addLabels": [":white_check_mark: bot approval"],
-      "schedule": ["at any time"]
-    },
-    {
-      "stabilityDays": 7,
-      "matchPackageNames": ["typescript"],
-      "matchUpdateTypes": ["minor"],
-      "addLabels": [":white_check_mark: bot approval"],
-      "schedule": ["at any time"]
-    },
-    {
       "groupName": "@pob eslint configs",
       "stabilityDays": 0,
       "matchPackageNames": ["@pob/eslint-config*"]
@@ -136,14 +95,57 @@
       "matchSourceUrls": ["https://github.com/liwijs/liwi{/,}**"]
     },
     {
+      "groupName": "alouette",
+      "description": "alouette monorepo",
+      "stabilityDays": 0,
+      "matchPackageNames": ["alouette", "alouette-icons"]
+    },
+    {
+      "stabilityDays": 0,
+      "matchPackageNames": ["check-package-dependencies", "@pob/*", "pob-*"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "addLabels": [":white_check_mark: bot approval"],
+      "schedule": ["at any time"]
+    },
+    {
+      "matchPackageNames": [
+        "eslint",
+        "prettier",
+        "rollup",
+        "semver",
+        "typedoc",
+        "jest",
+        "jest-junit-reporter",
+        "@typescript-eslint/*",
+        "eslint-*",
+        "@babel/*",
+        "babel-*",
+        "@types/*",
+        "@rollup*/",
+        "vitest",
+        "vite"
+      ],
+      "matchUpdateTypes": ["patch", "minor"],
+      "addLabels": [":white_check_mark: bot approval"],
+      "schedule": ["at any time"]
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["patch"],
+      "addLabels": [":white_check_mark: bot approval"],
+      "schedule": ["at any time"]
+    },
+    {
+      "stabilityDays": 7,
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["minor"],
+      "addLabels": [":white_check_mark: bot approval"],
+      "schedule": ["at any time"]
+    },
+    {
       "groupName": "tamagui",
       "description": "tamagui monorepo",
       "matchPackageNames": ["tamagui", "@tamagui/*"]
-    },
-    {
-      "groupName": "alouette",
-      "description": "alouette monorepo",
-      "matchPackageNames": ["alouette", "alouette-icons"]
     },
     {
       "groupName": "pob root",
@@ -157,12 +159,6 @@
       "stabilityDays": 1,
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["at any time"]
-    },
-    {
-      "matchPackageNames": ["@pob/root", "@pob/lerna-light", "yarn"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "stabilityDays": 0,
-      "addLabels": [":white_check_mark: bot approval"]
     },
     {
       "matchUpdateTypes": ["pin"],
