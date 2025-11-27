@@ -9,7 +9,7 @@
   "lockFileMaintenance": {
     "enabled": false
   },
-  "stabilityDays": 4,
+  "minimumReleaseAge": 4,
   "internalChecksFilter": "strict",
   "packageRules": [
     {
@@ -71,13 +71,13 @@
     },
     {
       "groupName": "@pob eslint configs",
-      "stabilityDays": 0,
+      "minimumReleaseAge": 0,
       "matchPackageNames": ["@pob/eslint-config*"]
     },
     {
       "groupName": "nightingale",
       "description": "nightingale monorepo",
-      "stabilityDays": 0,
+      "minimumReleaseAge": 0,
       "matchSourceUrls": [
         "https://github.com/christophehurpeau/nightingale{/,}**"
       ]
@@ -85,23 +85,23 @@
     {
       "groupName": "alp",
       "description": "alp monorepo",
-      "stabilityDays": 0,
+      "minimumReleaseAge": 0,
       "matchSourceUrls": ["https://github.com/christophehurpeau/alp{/,}**"]
     },
     {
       "groupName": "liwi",
       "description": "liwi monorepo",
-      "stabilityDays": 0,
+      "minimumReleaseAge": 0,
       "matchSourceUrls": ["https://github.com/liwijs/liwi{/,}**"]
     },
     {
       "groupName": "alouette",
       "description": "alouette monorepo",
-      "stabilityDays": 0,
+      "minimumReleaseAge": 0,
       "matchPackageNames": ["alouette", "alouette-icons"]
     },
     {
-      "stabilityDays": 0,
+      "minimumReleaseAge": 0,
       "matchPackageNames": ["check-package-dependencies", "@pob/*", "pob-*"],
       "matchUpdateTypes": ["patch", "minor"],
       "addLabels": [":white_check_mark: bot approval"],
@@ -136,7 +136,7 @@
       "schedule": ["at any time"]
     },
     {
-      "stabilityDays": 7,
+      "minimumReleaseAge": 7,
       "matchPackageNames": ["typescript"],
       "matchUpdateTypes": ["minor"],
       "addLabels": [":white_check_mark: bot approval"],
@@ -151,12 +151,12 @@
       "groupName": "pob root",
       "description": "pob root",
       "matchPackageNames": ["@pob/root", "@pob/lerna-light"],
-      "stabilityDays": 1,
+      "minimumReleaseAge": 1,
       "schedule": ["at any time"]
     },
     {
       "matchPackageNames": ["yarn"],
-      "stabilityDays": 1,
+      "minimumReleaseAge": 1,
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["at any time"]
     },
