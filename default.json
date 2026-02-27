@@ -29,6 +29,10 @@
       "dependencyDashboardApproval": true
     },
     {
+      "matchPackageNames": ["react-native"],
+      "enabled": false
+    },
+    {
       "matchDepTypes": ["dependencies", "peerDependencies"],
       "matchUpdateTypes": ["major", "minor"],
       "semanticCommitType": "feat"
