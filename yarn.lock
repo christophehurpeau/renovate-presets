@@ -5,10 +5,10 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"pob-dependencies@npm:20.2.0":
-  version: 20.2.0
-  resolution: "pob-dependencies@npm:20.2.0"
-  checksum: 10/6b22067afebede538986d85a06f2f0a002f0d0d1b83301a4052a90b3717792bf65d973b0f57eae95452d16748087eb73195a2c9f16d81523c1542e54f8552dfe
+"pob-dependencies@npm:23.2.0":
+  version: 23.2.0
+  resolution: "pob-dependencies@npm:23.2.0"
+  checksum: 10/ebbfb3d4ff6daf5cf6fccd610cd0f5bb216dc38b0f05b0342d05c7ea8348c0e40b457dec5411a94e238a9afa053cf67b7cdbfd63038ea63f99e70155007a9d82
   languageName: node
   linkType: hard
 
@@ -25,7 +25,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    pob-dependencies: "npm:20.2.0"
+    pob-dependencies: "npm:23.2.0"
     prettier: "npm:3.8.1"
   languageName: unknown
   linkType: soft
