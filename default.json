@@ -163,6 +163,8 @@
       "schedule": ["at any time"]
     },
     {
+      "groupName": "npm pin",
+      "matchManagers": ["npm"],
       "matchUpdateTypes": ["pin"],
       "addLabels": [":white_check_mark: bot approval"],
       "schedule": ["at any time"]
