@@ -43,20 +43,18 @@
       "semanticCommitType": "fix",
       "matchPackageNames": [
         "@playwright/test",
-        "@pob/esbuild",
-        "@pob/rollup-esbuild",
-        "@pob/rollup-typescript",
-        "@swc-node/register",
-        "@swc/core",
-        "@swc/jest",
         "@vitest/coverage-v8",
         "alp-rollup-plugin-config",
         "check-package-dependencies",
         "pinst",
-        "pob-babel",
         "rollup",
         "tslib",
-        "vitest"
+        "vite",
+        "vitest",
+        "@pob/esbuild",
+        "@pob/rollup-typescript",
+        "pob-babel",
+        "@pob/rollup-esbuild"
       ]
     },
     {

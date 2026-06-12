@@ -27,13 +27,13 @@ const isEslintDep = (dep) =>
   dep.startsWith("@pob/eslint") ||
   dep.startsWith("@typescript-eslint/");
 
-if (config.packageRules[4].semanticCommitType !== "fix") {
+if (config.packageRules[5].semanticCommitType !== "fix") {
   throw new Error(
-    `Expected config.packageRules[4].semanticCommitType to be "fix" but got "${config.packageRules[4].semanticCommitType}"`,
+    `Expected config.packageRules[5].semanticCommitType to be "fix" but got "${config.packageRules[5].semanticCommitType}"`,
   );
 }
 
-config.packageRules[4].matchPackageNames = Object.keys(
+config.packageRules[5].matchPackageNames = Object.keys(
   pobDependencies.devDependencies,
 ).filter(
   (pkgName) =>
