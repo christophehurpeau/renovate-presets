@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import prettier from "prettier";
+import { format } from "oxfmt";
 
 const pobDependencies = JSON.parse(
   fs.readFileSync("node_modules/pob-dependencies/package.json"),
@@ -13,7 +13,6 @@ const excludePkgNames = [
   "@pob/commitlint-config",
   "@pob/pretty-pkg",
   "@pob/lerna-light",
-  "prettier",
   "typescript",
   "semver",
   "repository-check-dirty",
@@ -44,9 +43,10 @@ config.packageRules[6].matchPackageNames = Object.keys(
     !isEslintDep(pkgName),
 );
 
-const formattedConfig = await prettier.format(JSON.stringify(config, null, 2), {
-  filepath: "default.json",
-  printWidth: 80,
-});
+const { code: formattedConfig } = await format(
+  "default.json",
+  JSON.stringify(config, null, 2),
+  { printWidth: 80 },
+);
 
 fs.writeFileSync("./default.json", formattedConfig);

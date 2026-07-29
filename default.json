@@ -49,7 +49,6 @@
         "@playwright/test",
         "@vitest/coverage-v8",
         "alp-rollup-plugin-config",
-        "check-package-dependencies",
         "pinst",
         "rollup",
         "tslib",
@@ -57,7 +56,6 @@
         "vitest",
         "@pob/esbuild",
         "@pob/rollup-typescript",
-        "pob-babel",
         "@pob/rollup-esbuild"
       ]
     },

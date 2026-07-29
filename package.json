@@ -2,9 +2,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "pob-dependencies": "24.1.1",
-    "prettier": "3.9.5"
-  },
-  "packageManager": "yarn@4.9.1",
-  "prettier": {}
+    "pob-dependencies": "27.1.1",
+    "oxfmt": "0.61.0"
+  }
 }
