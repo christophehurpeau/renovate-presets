@@ -147,6 +147,12 @@
       "schedule": ["at any time"]
     },
     {
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["major"],
+      "minimumReleaseAge": 14,
+      "dependencyDashboardApproval": true
+    },
+    {
       "groupName": "tamagui",
       "description": "tamagui monorepo",
       "matchPackageNames": ["tamagui", "@tamagui/*"]
