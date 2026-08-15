@@ -109,7 +109,7 @@
       "groupName": "liwi",
       "description": "liwi monorepo",
       "minimumReleaseAge": 0,
-      "matchSourceUrls": ["https://github.com/liwijs/liwi{/,}**"]
+      "matchSourceUrls": ["https://github.com/christophehurpeau/liwi{/,}**"]
     },
     {
       "groupName": "alouette",
