@@ -33,7 +33,15 @@
       "dependencyDashboardApproval": true
     },
     {
-      "matchPackageNames": ["react-native"],
+      "matchPackageNames": [
+        "react-native",
+        "@react-native/metro-config",
+        "react-native-svg",
+        "react-native-safe-area-context",
+        "@expo/*",
+        "expo-*",
+        "expo"
+      ],
       "enabled": false
     },
     {
