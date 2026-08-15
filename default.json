@@ -39,6 +39,10 @@
         "react-native-svg",
         "react-native-safe-area-context",
         "react-native-worklets",
+        "react-native-screens",
+        "react-native-reanimated",
+        "react-native-gesture-handler",
+        "react-native-web",
         "@expo/*",
         "expo-*",
         "expo"
