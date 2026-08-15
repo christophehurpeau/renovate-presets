@@ -38,6 +38,7 @@
         "@react-native/metro-config",
         "react-native-svg",
         "react-native-safe-area-context",
+        "react-native-worklets",
         "@expo/*",
         "expo-*",
         "expo"
