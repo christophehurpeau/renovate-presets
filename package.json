@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
-    "pob-dependencies": "27.1.1",
+    "pob-dependencies": "27.4.0",
     "oxfmt": "0.64.0"
   }
 }
