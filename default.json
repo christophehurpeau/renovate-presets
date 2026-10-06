@@ -191,7 +191,9 @@
       "schedule": ["at any time"]
     },
     {
+      "description": "pnpm version is managed by pob",
       "matchPackageNames": ["pnpm"],
+      "enabled": false,
       "rangeStrategy": "replace"
     }
   ]
