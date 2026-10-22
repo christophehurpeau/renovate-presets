@@ -1,8 +1,12 @@
 {
   "private": true,
   "type": "module",
+  "scripts": {
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
+  },
   "devDependencies": {
-    "pob-dependencies": "27.1.1",
-    "oxfmt": "0.73.0"
+    "oxfmt": "0.73.0",
+    "pob-dependencies": "27.1.1"
   }
 }
