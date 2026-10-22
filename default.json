@@ -60,16 +60,17 @@
       "semanticCommitType": "fix",
       "matchPackageNames": [
         "@playwright/test",
+        "@pob/esbuild",
+        "@pob/rollup-esbuild",
+        "@pob/rollup-typescript",
         "@vitest/coverage-v8",
         "alp-rollup-plugin-config",
         "pinst",
+        "playwright",
         "rollup",
         "tslib",
         "vite",
-        "vitest",
-        "@pob/esbuild",
-        "@pob/rollup-typescript",
-        "@pob/rollup-esbuild"
+        "vitest"
       ]
     },
     {
