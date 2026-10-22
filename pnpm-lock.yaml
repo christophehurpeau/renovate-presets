@@ -12,8 +12,8 @@ importers:
         specifier: 0.73.0
         version: 0.73.0
       pob-dependencies:
-        specifier: 27.1.1
-        version: 27.1.1
+        specifier: 27.14.0
+        version: 27.14.0
 
 packages:
 
@@ -155,8 +155,8 @@ packages:
       vite-plus:
         optional: true
 
-  pob-dependencies@27.1.1:
-    resolution: {integrity: sha512-tv+1jATlUJ/DziMxMhNBi5jAOV0GQXokprJdkJUyh0XLx+5qfrkQW+JnoY4F4dnbthoNr1AzO2oqIneDYddrhQ==}
+  pob-dependencies@27.14.0:
+    resolution: {integrity: sha512-g+cweHQ17V5ydd89xCnlZR2RanxyuZx3g5BsMcJu6XqyjUr7mq760XzRNr0Fz/D3mt1pQ0pBMOdNWUlUJ4AA2Q==}
     engines: {node: '>=22.18.0'}
 
   tinypool@2.2.0:
@@ -246,6 +246,6 @@ snapshots:
       '@oxfmt/binding-win32-ia32-msvc': 0.73.0
       '@oxfmt/binding-win32-x64-msvc': 0.73.0
 
-  pob-dependencies@27.1.1: {}
+  pob-dependencies@27.14.0: {}
 
   tinypool@2.2.0: {}
