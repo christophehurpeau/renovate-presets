@@ -18,7 +18,7 @@ jobs:
           # push with the deploy key so the commit triggers the other workflows
           ssh-key: ${{ secrets.PUSH_DEPLOY_KEY }}
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
         with:
           version: 12
 
