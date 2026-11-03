@@ -120,6 +120,11 @@
       "matchPackageNames": ["alouette", "alouette-icons"]
     },
     {
+      "description": "alouette declares exact nativewind and react-native-css peers: update them when updating alouette. The alouette repository re-enables them",
+      "matchPackageNames": ["nativewind", "react-native-css"],
+      "enabled": false
+    },
+    {
       "minimumReleaseAge": "0 days",
       "matchPackageNames": ["check-package-dependencies", "@pob/*", "pob-*"],
       "matchUpdateTypes": ["patch", "minor"],
