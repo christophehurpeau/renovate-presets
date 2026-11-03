@@ -2,14 +2,14 @@
   "prConcurrentLimit": 10,
   "dependencyDashboard": true,
   "dependencyDashboardApproval": false,
-  "recreateClosed": true,
+  "recreateWhen": "always",
   "postUpdateOptions": ["yarnDedupeFewer", "yarnDedupeHighest", "pnpmDedupe"],
   "labels": [":vertical_traffic_light: automerge"],
   "assignees": ["christophehurpeau"],
   "lockFileMaintenance": {
     "enabled": false
   },
-  "minimumReleaseAge": 4,
+  "minimumReleaseAge": "4 days",
   "internalChecksFilter": "strict",
   "packageRules": [
     {
@@ -89,13 +89,13 @@
     },
     {
       "groupName": "@pob eslint configs",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0 days",
       "matchPackageNames": ["@pob/eslint-config*"]
     },
     {
       "groupName": "nightingale",
       "description": "nightingale monorepo",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0 days",
       "matchSourceUrls": [
         "https://github.com/christophehurpeau/nightingale{/,}**"
       ]
@@ -103,23 +103,23 @@
     {
       "groupName": "alp",
       "description": "alp monorepo",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0 days",
       "matchSourceUrls": ["https://github.com/christophehurpeau/alp{/,}**"]
     },
     {
       "groupName": "liwi",
       "description": "liwi monorepo",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0 days",
       "matchSourceUrls": ["https://github.com/christophehurpeau/liwi{/,}**"]
     },
     {
       "groupName": "alouette",
       "description": "alouette monorepo",
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0 days",
       "matchPackageNames": ["alouette", "alouette-icons"]
     },
     {
-      "minimumReleaseAge": 0,
+      "minimumReleaseAge": "0 days",
       "matchPackageNames": ["check-package-dependencies", "@pob/*", "pob-*"],
       "matchUpdateTypes": ["patch", "minor"],
       "addLabels": [":white_check_mark: bot approval"],
@@ -154,7 +154,7 @@
       "schedule": ["at any time"]
     },
     {
-      "minimumReleaseAge": 7,
+      "minimumReleaseAge": "7 days",
       "matchPackageNames": ["typescript"],
       "matchUpdateTypes": ["minor"],
       "addLabels": [":white_check_mark: bot approval"],
@@ -163,7 +163,7 @@
     {
       "matchPackageNames": ["typescript"],
       "matchUpdateTypes": ["major"],
-      "minimumReleaseAge": 14,
+      "minimumReleaseAge": "14 days",
       "dependencyDashboardApproval": true
     },
     {
@@ -175,12 +175,12 @@
       "groupName": "pob root",
       "description": "pob root",
       "matchPackageNames": ["@pob/root", "@pob/lerna-light"],
-      "minimumReleaseAge": 1,
+      "minimumReleaseAge": "1 day",
       "schedule": ["at any time"]
     },
     {
       "matchPackageNames": ["yarn"],
-      "minimumReleaseAge": 1,
+      "minimumReleaseAge": "1 day",
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["at any time"]
     },
