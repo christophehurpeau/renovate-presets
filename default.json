@@ -197,6 +197,12 @@
       "matchPackageNames": ["pnpm"],
       "enabled": false,
       "rangeStrategy": "replace"
+    },
+    {
+      "description": "Babel majors wait for the toolchains that pin Babel 7 (Expo's @expo/metro-config and babel-preset-expo): open them only from the Dependency Dashboard",
+      "matchPackageNames": ["@babel/*", "babel-*"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
     }
   ]
 }
