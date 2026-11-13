@@ -76,10 +76,13 @@
     },
     {
       "groupName": "Pob Dependencies",
+      "description": "@pob/rollup-esbuild pins rollup exactly as dependency and peer: a rollup bump lands with the matching @pob/rollup-esbuild release, in the same PR",
       "matchPackageNames": [
         "alp-rollup-plugin-config",
         "pob-babel",
-        "@pob/rollup-*"
+        "@pob/rollup",
+        "@pob/rollup-*",
+        "rollup"
       ],
       "schedule": ["before 3am on Friday"]
     },
