@@ -8,7 +8,7 @@
     "generate:expo": "node generate-expo.json.js"
   },
   "devDependencies": {
-    "oxfmt": "0.76.0",
+    "oxfmt": "0.78.0",
     "pob-dependencies": "28.7.0"
   }
 }
