@@ -9,6 +9,6 @@
   },
   "devDependencies": {
     "oxfmt": "0.78.0",
-    "pob-dependencies": "28.8.1"
+    "pob-dependencies": "28.9.0"
   }
 }
